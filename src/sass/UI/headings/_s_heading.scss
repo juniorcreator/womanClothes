@@ -1,0 +1,21 @@
+.s-heading {
+  color: #2b2b2b;
+  font-family: "Comfortaa-Bold";
+  font-size: 30px;
+  line-height: 46px;
+  letter-spacing: -1.5px;
+  margin-bottom: 42px;
+  &-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @include sm_769{
+    font-size: 20px;
+    line-height: 23px;
+    &-filter {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}

@@ -1,0 +1,117 @@
+.product-wrap{
+  width: calc(100% - 300px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #fff;
+  text-align: center;
+  padding-bottom: 15px;
+  width: calc((100% - 60px)/ 3);
+  margin-bottom: 6px;
+  box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.09);
+  box-sizing: border-box;
+  border-radius: 5px;
+  position: relative;
+  transition: box-shadow .3s;
+  &:hover {
+    box-shadow: 0 5px 11px 1px rgba(68, 190, 217, 0.36);
+  .product__title {
+    color: #23a2be;
+  }
+  }
+  &__alt {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+  }
+  &__raiting {
+    margin: 0 auto 11px auto;
+  }
+  &__img {
+    position: relative;
+    width: 100%;
+    padding-bottom: 86.666666%;
+    margin-bottom: 21px;
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      max-width: 100%;
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__price {
+    text-align: center;
+    color: #282828;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: -0.15px;
+  }
+  hr {
+    max-width: 79px;
+    width: 100%;
+    margin: 0 auto 14px auto;
+    height: 1px;
+    border: none;
+    background-color: #dbdbdb;
+  }
+  &__content {
+    padding: 0 20px;
+    margin-top: auto;
+  }
+  &__title {
+    margin-bottom: 14px;
+    color: #282828;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.15px;
+    text-align: center;
+    transition: color .3s;
+  }
+  .btn {
+
+  }
+  @include md_1190{
+    &__title {
+    }
+  }
+  @include md_960{
+    width: calc((100% - 18px)/ 3);
+  }
+  @include sm_769{
+    width: calc((100% - 10px)/ 4);
+    margin-bottom: 4px;
+    padding-bottom: 23px;
+    &__img {
+      padding-bottom: 92.29%;
+    }
+    &__content {
+      padding: 0 7px;
+    }
+  }
+  @include sm_690{
+    width: calc((100% - 10px)/ 3);
+  }
+  @include xs_540{
+    width: calc((100% - 4px)/ 2);
+    padding-bottom: 20px;
+    &__title {
+      font-size: 12px;
+      line-height: 14px;
+    }
+    &__img {
+      padding-bottom: 84.29%;
+    }
+  }
+}

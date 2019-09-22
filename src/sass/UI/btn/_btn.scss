@@ -1,0 +1,112 @@
+.btn {
+  border: 2px solid #752023;
+  background-color: #fff;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 11.5px 59.5px;
+  color: #752023;
+  cursor: pointer;
+  outline: none;
+  transition: background-color .3s,
+  color .3s, border .3s;
+  &:hover {
+    background-color: #fff;
+    color: #752023;
+  }
+  &--accept{
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    background-color: #fbfbfb;
+    border: 1px solid #ebebeb;
+    border-top: none;
+    color: #36a8bf;
+    width: 100%;
+    font-family: "arial";
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.13px;
+    padding: 13px 24px 14px 24px;
+    text-align: center;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    transition: opacity .3s, background-color .3s, box-shadow .3s;
+    &:hover {
+      background-color: #BB2023;
+      color: #fff;
+      border-color: #BB2023;
+    }
+  }
+  @include md_1190{
+    font-size: 14px;
+    padding: 9px 19.5px;
+    &-search {
+      padding: 9px 29.5px;
+    }
+    &--accept {
+      right: -95px;
+      &:after {
+        width: 26px;
+        height: 26px;
+        bottom: 4px;
+        left: -13px;
+      }
+    }
+  }
+  @include sm_769{
+    border-width: 1px;
+    padding: 10px 20.5px;
+    &--accept {
+      top: 0;
+      left: 100%;
+      border-radius: 35px;
+      font-size: 16px;
+      padding: 10px 28px;
+      &:after {
+        display: none;
+      }
+    }
+    &-search {
+      padding: 10px 30.5px;
+    }
+    &--more {
+      font-size: 16px;
+      padding: 10px 17.5px;
+    }
+    &--product {
+      padding: 6px 15.5px;
+    }
+  }
+  @include sm_690{
+    padding: 7.5px 14.5px;
+    &-search {
+      padding: 7px 30.5px;
+      height: 35px;
+    }
+    &--accept {
+      top: 50%;
+      left: 101%;
+      border-radius: 35px;
+      font-size: 16px;
+      padding: 10px 28px;
+      transform: translate(-35%,-50%) rotateZ(90deg);
+    }
+  }
+  @include xs_540{
+    &--product {
+      font-size: 12px;
+      line-height: 14px;
+      padding: 5px 12px;
+    }
+    &--order {
+      padding: 6.5px 14.5px 8px 14.5px;
+    }
+    &--accept {
+      position: relative;
+      left: 50%;
+      margin-top: 25px;
+      transform: translateX(-50%);
+    }
+  }
+}
